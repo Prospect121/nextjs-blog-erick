@@ -5,10 +5,9 @@ import Link from "next/link";
 import styles from '@/styles/Layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 
-const name = 'bluuee';
+const name = 'Erick :D';
 
 export default function layout({ children, title, description, home }) {
-  console.log(home)
   return (
     <div className={styles.container}>
       <Head>
@@ -78,5 +77,6 @@ export default function layout({ children, title, description, home }) {
 
 layout.defaultProps = {
   title: "Next.js | mi sitio web",
-  description: "Descripcion de mi sitio wweb"
+  description: "Descripcion de mi sitio wweb",
+  home: false
 }
